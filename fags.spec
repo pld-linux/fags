@@ -8,6 +8,8 @@ Group:		Applications/Communications
 Source0:	ftp://ftp.tty0.org/pub/fags/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config_dir.patch
 URL:		http://www.tty0.org/page/fags/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -33,7 +35,7 @@ Vorbis oraz ograniczanie szeroko¶ci pasma.
 %patch0 -p1
 
 %build
-aclocal
+%{__aclocal}
 %{__automake}
 %{__autoconf}
 %configure
@@ -41,7 +43,7 @@ aclocal
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install  DESTDIR=$RPM_BUILD_ROOT
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -50,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog INSTALL NEWS README TODO doc/*
 %attr(755,root,root) %{_bindir}/*
-%{_mandir}/*
+%{_mandir}/man?/*
