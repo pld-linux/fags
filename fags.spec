@@ -19,7 +19,7 @@ written in C and licensed under the GNU General Public License.
 
 FAGS features up to 20 simultaneous uploads or downloads using
 asynchronous socket I/O, resuming of uploads and downloads, sharing of
-multiple directories, reading of MP3 and OGG Vorbis ID3 tags and
+multiple directories, reading of MP3 and Ogg Vorbis ID3 tags and
 bandwidth limiting.
 
 %description -l pl
@@ -28,7 +28,7 @@ napisany w C i wydany na licencji GNU General Public License.
 
 FAGS umo¿liwia do 20 równoczesnych przekazów lub pobrañ u¿ywaj±c
 asynchronicznych gniazd WE/WY. Wspiera tak¿e wznawianie transmisji,
-dzielenie wielokrotnych katalogów, odczyt tagów ID3 z plików MP3 i OGG
+dzielenie wielokrotnych katalogów, odczyt tagów ID3 z plików MP3 i Ogg
 Vorbis oraz ograniczanie szeroko¶ci pasma.
 
 %prep
