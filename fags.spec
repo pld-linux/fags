@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	ftp://ftp.tty0.org/pub/fags/%{name}-%{version}.tar.gz
+# Source0-md5:	5ce2f79e63fa49138cf7374a68f611dd
 Patch0:		%{name}-config_dir.patch
 URL:		http://www.tty0.org/page/fags/
 BuildRequires:	autoconf
