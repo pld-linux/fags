@@ -3,8 +3,7 @@ Name:		fags
 Version:	0.2.1
 Release:	1
 License:	GPL
-Group:		Applications/Multimedia
-######		Unknown group!
+Group:		Applications/Communications
 Source0:	ftp://ftp.tty0.org/pub/fags/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config_dir.patch
 URL:		http://www.tty0.org/page/fags 
@@ -33,15 +32,10 @@ autoconf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-rm -rf %{buildroot}
 %__make install  DESTDIR=$RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
-
-%postun -p /sbin/ldconfig
-
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
