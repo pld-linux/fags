@@ -1,0 +1,43 @@
+diff -urN fags-0.2.1.orig/wrappers.c fags-0.2.1/wrappers.c
+--- fags-0.2.1.orig/wrappers.c	Sat Jun  8 12:14:16 2002
++++ fags-0.2.1/wrappers.c	Mon Jun 10 17:03:03 2002
+@@ -191,15 +191,34 @@
+ {
+ 	static unsigned char file[MAX_PATH];
+ 	unsigned char *home;
++	unsigned char *config_dir;
+ 
+ 	home = getenv("HOME");
++	
++	config_dir = getenv("CONFIG_DIR");
+ 
+-	if(snprintf(file, sizeof(file), "%s/.fags/%s", home?home:(unsigned char*)".", path) == -1)
+-	{
+-		NOTICE("Path too long!");
+-		return NULL;
+-	}
++	if ( config_dir != NULL ){
++		if (config_dir[0] == '/'){
++			if(snprintf(file, sizeof(file), "%s/fags/%s", config_dir, path) == -1)
++			{
++				NOTICE("Path too long!");
++				return NULL;
++			}
++		}else{
++			if(snprintf(file, sizeof(file), "%s/%s/fags/%s", home?home:(unsigned char*)".",config_dir, path) == -1)
++			{
++				NOTICE("Path too long!");
++				return NULL;
++			}
++		}
++	}else{
+ 
++		if(snprintf(file, sizeof(file), "%s/.fags/%s", home?home:(unsigned char*)".", path) == -1)
++		{
++			NOTICE("Path too long!");
++			return NULL;
++		}
++	}
+ 	return file;
+ }
+ 
