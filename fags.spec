@@ -34,8 +34,8 @@ Vorbis oraz ograniczanie szeroko¶ci pasma.
 
 %build
 aclocal
-{__automake}
-{__autoconf}
+%{__automake}
+%{__autoconf}
 %configure
 %{__make}
 
