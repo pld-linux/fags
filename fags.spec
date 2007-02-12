@@ -1,5 +1,5 @@
 Summary:	Free AudioGalaxy Satellite client
-Summary(pl.UTF-8):   "Wolny" klient AudioGalaxy
+Summary(pl.UTF-8):	"Wolny" klient AudioGalaxy
 Name:		fags
 Version:	0.2.1
 Release:	1
