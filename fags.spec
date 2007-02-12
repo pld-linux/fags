@@ -1,5 +1,5 @@
 Summary:	Free AudioGalaxy Satellite client
-Summary(pl):	"Wolny" klient AudioGalaxy
+Summary(pl.UTF-8):   "Wolny" klient AudioGalaxy
 Name:		fags
 Version:	0.2.1
 Release:	1
@@ -22,14 +22,14 @@ asynchronous socket I/O, resuming of uploads and downloads, sharing of
 multiple directories, reading of MP3 and Ogg Vorbis ID3 tags and
 bandwidth limiting.
 
-%description -l pl
-FAGS jest "wolnym" klientem AudioGalaxy dla UNIKSA i Linuksa. Zosta≥
+%description -l pl.UTF-8
+FAGS jest "wolnym" klientem AudioGalaxy dla UNIKSA i Linuksa. Zosta≈Ç
 napisany w C i wydany na licencji GNU General Public License.
 
-FAGS umoøliwia do 20 rÛwnoczesnych przekazÛw lub pobraÒ uøywaj±c
-asynchronicznych gniazd WE/WY. Wspiera takøe wznawianie transmisji,
-dzielenie wielokrotnych katalogÛw, odczyt tagÛw ID3 z plikÛw MP3 i Ogg
-Vorbis oraz ograniczanie szeroko∂ci pasma.
+FAGS umo≈ºliwia do 20 r√≥wnoczesnych przekaz√≥w lub pobra≈Ñ u≈ºywajƒÖc
+asynchronicznych gniazd WE/WY. Wspiera tak≈ºe wznawianie transmisji,
+dzielenie wielokrotnych katalog√≥w, odczyt tag√≥w ID3 z plik√≥w MP3 i Ogg
+Vorbis oraz ograniczanie szeroko≈õci pasma.
 
 %prep
 %setup -q
